@@ -9,7 +9,6 @@ Summary:        %Summary
 Name:		%name
 Version: 	%version
 Release: 	%release
-# svn co svn://anonsvn.kde.org/home/kde/trunk/playground/base/plasma/applets/kustodian
 Source0: 	http://daisyplasma.freehostia.com/downloads/%{name}-%{version}.tar.gz
 License: 	GPLv3
 Group: 		%section
@@ -17,7 +16,6 @@ URL:		http://daisyplasma.freehostia.com/
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	plasma-devel
 BuildRequires:	kdebase4-workspace-devel
-#Requires:       kdebase4-runtime => 4.3.0
 
 %description
 Daisy is a  free open-source widget for Plasma/KDE released under the
@@ -36,7 +34,7 @@ Main features:
 
 %files -f plasma_applet_daisy.lang
 %defattr(-,root,root)
-%doc README
+%doc README AUTHORS CHANGELOG COPYING INSTALL TODO
 %_kde_libdir/kde4/plasma_applet_daisy.so
 %_kde_services/plasma-applet-daisy.desktop
 %{_datadir}/apps/desktoptheme/default/widgets/
@@ -51,7 +49,6 @@ Main features:
 %install
 %__rm -rf %{buildroot}
 %{makeinstall_std} -C build
-
 
 
 %find_lang plasma_applet_daisy
