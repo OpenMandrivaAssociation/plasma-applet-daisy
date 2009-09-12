@@ -1,19 +1,19 @@
 %define name	plasma-applet-daisy
 %define version	0.0.4.19
-%define release	%mkrel 1
-%define section	Graphical desktop/KDE
+%define release	%mkrel 2
 %define Summary	 "Daisy" is a simple application launcher for Plasma
 
 
-Summary:        %Summary
+Summary:	%Summary
 Name:		%name
-Version: 	%version
-Release: 	%release
-Source0: 	http://daisyplasma.freehostia.com/downloads/%{name}-%{version}.tar.gz
-License: 	GPLv3
-Group: 		%section
+Version:	%version
+Release:	%release
+Source0:	http://daisyplasma.freehostia.com/downloads/%{name}-%{version}.tar.gz
+Patch0:		plasma-applet-daisy-fix-categories.patch
+License:	GPLv3
+Group:		Graphical desktop/KDE
 URL:		http://daisyplasma.freehostia.com/
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	plasma-devel
 BuildRequires:	kdebase4-workspace-devel
 
@@ -41,7 +41,7 @@ Main features:
 
 %prep
 %setup -q
-
+%patch0 -p0
 %build
 %cmake_kde4
 %make
