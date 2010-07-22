@@ -1,5 +1,5 @@
 %define name	plasma-applet-daisy
-%define version	0.0.4.22
+%define version	0.0.4.23
 %define release	%mkrel 1
 %define Summary	 "Daisy" is a simple application launcher for Plasma
 
