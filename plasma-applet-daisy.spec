@@ -8,12 +8,11 @@ Summary:	%Summary
 Name:		%name
 Version:	%version
 Release:	%release
-Source0:	http://daisyplasma.freehostia.com/downloads/%{name}-%{version}.tar.gz
+Source0:	http://cdlszm.org/downloads/%{name}-%{version}.tar.gz
 License:	GPLv3
 Group:		Graphical desktop/KDE
-URL:		http://daisyplasma.freehostia.com/
+URL:		http://cdlszm.org/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	plasma-devel
 BuildRequires:	kdebase4-workspace-devel
 Provides:	plasma-applet
 
