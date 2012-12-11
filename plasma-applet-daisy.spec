@@ -1,18 +1,17 @@
 %define name	plasma-applet-daisy
-%define version	0.0.4.23
-%define release	%mkrel 1
+%define version	0.0.4.26
+%define release	 1
 %define Summary	 "Daisy" is a simple application launcher for Plasma
 
 
-Summary:	%Summary
+Summary:		%Summary
 Name:		%name
-Version:	%version
-Release:	%release
-Source0:	http://cdlszm.org/downloads/%{name}-%{version}.tar.gz
-License:	GPLv3
+Version:		%version
+Release:		%release
+Source0:		http://cdlszm.org/downloads/%{name}-%{version}.tar.gz
+License:		GPLv3
 Group:		Graphical desktop/KDE
 URL:		http://cdlszm.org/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	kdebase4-workspace-devel
 Provides:	plasma-applet
 
@@ -29,10 +28,9 @@ Main features:
     * Hybrid launchers to launch applications and control running
       tasks;
     * Plugins to provide information and execute several tasks;
-    * Various backgrounds available.
+    * Various backgrounds available
 
 %files -f plasma_applet_daisy.lang
-%defattr(-,root,root)
 %doc README AUTHORS CHANGELOG COPYING INSTALL TODO
 %_kde_libdir/kde4/plasma_applet_daisy.so
 %_kde_services/plasma-applet-daisy.desktop
@@ -48,10 +46,7 @@ Main features:
 %make
 
 %install
-%__rm -rf %{buildroot}
 %{makeinstall_std} -C build
 
 %find_lang plasma_applet_daisy
 
-%clean
-%__rm -rf %{buildroot}
