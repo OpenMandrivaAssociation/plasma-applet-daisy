@@ -1,7 +1,7 @@
 Summary:	A simple application launcher for Plasma
 Name:		plasma-applet-daisy
 Version:	0.0.4.26
-Release:	2
+Release:	3
 License:	GPLv3+
 Group:		Graphical desktop/KDE
 Url:		http://cdlszm.org/
