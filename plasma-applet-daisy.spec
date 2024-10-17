@@ -4,7 +4,7 @@ Version:	0.0.4.26
 Release:	3
 License:	GPLv3+
 Group:		Graphical desktop/KDE
-Url:		http://cdlszm.org/
+Url:		https://cdlszm.org/
 Source0:	http://cdlszm.org/downloads/%{name}-%{version}.tar.gz
 BuildRequires:	kdebase4-workspace-devel
 Requires:	kdebase4-workspace
